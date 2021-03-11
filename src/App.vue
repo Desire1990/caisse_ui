@@ -9,6 +9,8 @@
    <div v-else>
       <Login @connected="performLogin"/>
   </div>
+  <div id="app">
+    <router-view/>
   </div>
 </template>
 
@@ -16,26 +18,15 @@
 import SideBar from './components/SideBar'
 import TopBar from './components/TopBar'
 import Login from './components/Login'
-
-  export default  {
-    components: { SideBar, TopBar, Login},
-    data(){
-      return {
-        logged_in:false
-      }
-    },
-    methods:{
-      performLogin(user){
-        console.log(user)
-        this.logged_in=true;
-      },
-      logout(){
-        if (confirm("Vous etes sur de vouloir vous deconnecter?")) {
-          this.logged_in=true
-        }
-      }
-    }
-  };
+export default {
+	component:{SideBar,TopBar,Login},
+	data(){
+		return {
+			logged_in:false
+		}
+	}
+	
+}
 </script>
 
 <style>
