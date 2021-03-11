@@ -16,7 +16,7 @@
                                 <input type="password" class="form-control rounded-left" placeholder="Password" required>
                             </div>
                             <div class="form-group">
-                                <button type="submit" class="form-control btn btn-primary rounded submit px-3">Login</button>
+                                <button type="submit" class="form-control btn btn-primary rounded submit px-3" @click="login">Login</button>
                             </div>
                         </form>
                     </div>
@@ -30,6 +30,16 @@
 
 
 export default {
+     data() {
+    return {};
+  },
+  methods: {
+    login(){
+      // axios post to /login
+      let user = {} // response.data
+      this.$emit("connected", user)
+    }
+  },
  
 }
 </script>

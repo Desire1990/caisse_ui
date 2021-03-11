@@ -2,15 +2,7 @@
 <template>
 <!-- Navbar-->
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid justify-content-between">
-    <!-- Left elements -->
-    <div class="d-flex">
-      <!-- Brand -->
-<div class="brand"><h1> Pharmacy</h1></div>
-    </div>
-    <!-- Left elements -->
-
-  
+  <div class="container-fluid justify-content-between">  
     <!-- Right elements -->
     <ul class="navbar-nav flex-row">
       <li class="nav-item me-3 me-lg-1">
@@ -70,9 +62,6 @@ export default {
 </script>
 
 <style scoped>
-.router :hover {
-   text-decoration: none;
-  list-style: none;
-}
+
 </style>
 
