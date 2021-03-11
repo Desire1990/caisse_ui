@@ -1,8 +1,16 @@
 
 <template>
 <!-- Navbar-->
-<nav  class="navbar navbar-expand-lg navbar-blue bg-blue">
-  <div class="container-fluid justify-content-between">  
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid justify-content-between">
+    <!-- Left elements -->
+    <div class="d-flex">
+      <!-- Brand -->
+<div class="brand"><h1> Pharmacy</h1></div>
+    </div>
+    <!-- Left elements -->
+
+  
     <!-- Right elements -->
     <ul class="navbar-nav flex-row">
       <li class="nav-item me-3 me-lg-1">
@@ -17,26 +25,15 @@
           <strong class="d-none d-sm-block ms-1">GBstallman</strong>
         </a>
       </li>
-      <li class="nav-item dropdown me-3 me-lg-1">
-        <a
-          class="nav-link dropdown-toggle hidden-arrow"
-          href="#"
-          id="navbarDropdownMenuLink"
-          role="button"
-          data-mdb-toggle="dropdown"
-          aria-expanded="false"
-        >
-          <i class="fas fa-power-off fa-lg"></i>
+      <li class="">
+        <a >
+          <i class="fa fa-power-off">Logout</i>
         </a>
-        <ul
-          class="dropdown-menu dropdown-menu-end"
-          aria-labelledby="navbarDropdownMenuLink"
-        >
-          <li><a class="dropdown-item" href="#">Logout</a></li>
-        </ul>
+        
       </li>
     </ul>
     <!-- Right elements -->
+    </div>
   </div>
 </nav>
 <!-- Navbar -->
@@ -62,6 +59,9 @@ export default {
 </script>
 
 <style scoped>
-
+.router :hover {
+   text-decoration: none;
+  list-style: none;
+}
 </style>
 

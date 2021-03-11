@@ -1,7 +1,7 @@
 <template>
    <div id="app">
      <div class="main" v-if="logged_in">
-        <!-- <TopBar/> -->
+        <!-- <TopBar/> -
         <SideBar/>
         <router-view />
         <div class="loggout" @click="logout"></div>
@@ -16,6 +16,7 @@
 import SideBar from './components/SideBar'
 import TopBar from './components/TopBar'
 import Login from './components/Login'
+
   export default  {
     components: { SideBar, TopBar, Login},
     data(){
@@ -36,7 +37,12 @@ import Login from './components/Login'
     }
   };
 </script>
-<style scoped="">
-	
-	
+
+<style scoped>
+
+
+</style>>
+
+</style>>
+
 </style>
