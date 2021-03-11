@@ -1,7 +1,7 @@
 
 <template>
 <!-- Navbar-->
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav  class="navbar navbar-expand-lg navbar-blue bg-blue">
   <div class="container-fluid justify-content-between">  
     <!-- Right elements -->
     <ul class="navbar-nav flex-row">
