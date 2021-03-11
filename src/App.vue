@@ -1,8 +1,8 @@
 <template>
    <div id="app">
      <div class="main" v-if="logged_in">
-        <SideBar/>
         <TopBar/>
+        <SideBar/>
         <router-view />
         <div class="loggout" @click="logout"></div>
      </div>
@@ -38,6 +38,11 @@ import Login from './components/Login'
   };
 </script>
 
-<style>
+<style scoped>
+
+
+</style>>
+
+</style>>
 
 </style>
