@@ -1,29 +1,43 @@
 <template>
-  <div class="nav-side-menu">
-    <div class="menu-list">
-            <div>
-                <a href="#"> <h2>UBUBIKO</h2></a>
-           </div>    
-        
-        <li>
-          <router-link to="/"><div class="icons"><i class="fa fa-tachometer" aria-hidden="true"></i>
-</div>  Dashboard</router-link>
-        </li>
-         <li>
-          <router-link to="/moncompte"><div class="icons"><i class="fa fa-usd" aria-hidden="true"></i>
- </div> Mon Compte </router-link>
-        </li>
-         <li>
-           <router-link to="/membre"><div class="icons"><i class="fa fa-users" aria-hidden="true"></i>
-</div>Membre </router-link>
-        </li>
-         <li>
-           <router-link to="/aidesocial"> <div class="icons"><i class="fa fa-handshake-o" aria-hidden="true"></i>
-</div>  Aide Social </router-link>
-        </li>
-             
-    </div>
-  </div>
+		<div class="wrapper d-flex align-items-stretch">
+			<nav id="sidebar">
+				<div class="custom-menu">
+					<button type="button" id="sidebarCollapse" class="btn btn-primary">
+	          <i class="fa fa-bars"></i>
+	          <span class="sr-only">Toggle Menu</span>
+	        </button>
+        </div>  
+        <ul class="list-unstyled components mb-5">
+          <li class="active">
+            <a href="#"><span class="fa fa-home mr-3"></span> Homepage</a>
+          </li>
+          <li>
+              <a href="#"><span class="fa fa-user mr-3"></span> Dashboard</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Friends</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Subcription</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Settings</a>
+          </li>
+          <li>
+            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Information</a>
+          </li>
+        </ul>
+
+    	</nav>
+
+        <!-- Page Content  -->
+      <div id="content" class="p-4 p-md-5 pt-5">
+        <h2 class="mb-4">Sidebar #04</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+		</div>
+
 </template>
 
 <script>
@@ -39,86 +53,5 @@ export default {
 </script>
 
 <style scoped>
-h2{
-    font-family:  "Gill Sans Extrabold", sans-serif;
-    font-weight: bold;
-    color: #e1ffff;
-    text-align: center;
-  
-}
-.icons{
-    align-content: flex-start;
-    position: sticky;
-}
-.nav-side-menu {
-  overflow: auto;
-  font-family: verdana;
-  font-weight: 200;
-  background-color: #007bff;
-  position: fixed;
-  top: 0px;
-  width: 300px;
-  height: 100%;
-  color: #e1ffff;
-}
 
-.nav-side-menu ul,
-.nav-side-menu li {
-  list-style: none;
-  padding: 0px;
-  margin: 0px;
-  line-height: 35px;
-  cursor: pointer;
-}
-
-.nav-side-menu li {
-  padding: auto;
-  font-size: 20px;
-  padding-left: 0px;
-  border-left: 3px solid #2e353d;
-  border-bottom: 1px solid #23282e;
-}
-.nav-side-menu li a {
-  text-decoration: none;
-  color: #e1ffff;
-}
-.nav-side-menu li  i {
-  padding-left: 10px;
-  width: 20px;
-  padding-right: 20px;
-}
-.nav-side-menu li:hover {
-  border-radius: 1px solid #34cfdd;
-  background-color: #4b7eb4;
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
-}
-body {
-  margin: 0px;
-  padding: 0px;
-}
-@media (max-width: 767px) {
-  .nav-side-menu{
-    position: relative;
-    width: 100%;
-    margin-bottom: 10px;
-  }
-  .nav-side-menu  {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    right: 10px;
-    top: 10px;
-    z-index: 10 !important;
-    padding: 3px;
-    background-color: #ffffff;
-    color: #000;
-    width: 40px;
-    text-align: center;
-  }
-
-}
 </style>

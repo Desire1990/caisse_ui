@@ -6,7 +6,7 @@
     <!-- Left elements -->
     <div class="d-flex">
       <!-- Brand -->
-<div class="brand"><h1> Pharmacy</h1></div>
+<div class="brand"><h1> UBUBIKO</h1></div>
     </div>
     <!-- Left elements -->
 
