@@ -4,38 +4,24 @@
 				<div class="custom-menu">
 					<button type="button" id="sidebarCollapse" class="btn btn-primary">
 	          <i class="fa fa-bars"></i>
-	          <span class="sr-only">Toggle Menu</span>
 	        </button>
         </div>  
         <ul class="list-unstyled components mb-5">
-          <li class="active">
-            <a href="#"><span class="fa fa-home mr-3"></span> Homepage</a>
+          <li>
+              <router-link to="/"><span class="fa fa-tachometer mr-3"></span> Dashboard</router-link>
           </li>
           <li>
-              <a href="#"><span class="fa fa-user mr-3"></span> Dashboard</a>
+            <router-link to="/moncompte"><span class="fa fa-dollar mr-3"></span> Mon Compte</router-link>
           </li>
           <li>
-            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Friends</a>
+            <router-link to="/membre"><span class="fa fa-users mr-3"></span>Membre</router-link>
           </li>
           <li>
-            <a href="#"><span class="fa fa-sticky-note mr-3"></span> Subcription</a>
-          </li>
-          <li>
-            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Settings</a>
-          </li>
-          <li>
-            <a href="#"><span class="fa fa-paper-plane mr-3"></span> Information</a>
+           <router-link to="/aidesocial"><span class="fa fa-handshake-o mr-3"></span> Caisse Social</router-link>
           </li>
         </ul>
 
     	</nav>
-
-        <!-- Page Content  -->
-      <div id="content" class="p-4 p-md-5 pt-5">
-        <h2 class="mb-4">Sidebar #04</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-      </div>
 		</div>
 
 </template>
@@ -53,5 +39,6 @@ export default {
 </script>
 
 <style scoped>
+
 
 </style>
